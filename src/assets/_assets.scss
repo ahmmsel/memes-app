@@ -1,0 +1,23 @@
+:root {
+	--primary-bg: #5d5d5a;
+	--primary-color: #fff4e3;
+	--item-color: #ee5a5a;
+	--box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+}
+
+@mixin btn {
+	outline: none;
+	padding: .5rem .8rem;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	cursor: pointer;
+	&:hover {
+		filter: brightness(80%);
+	}
+}
+
+@mixin grid($gap, $size) {
+	display: grid;
+  gap: $gap;
+  grid-template-columns: repeat(auto-fill, minmax($size, 1fr));
+}
